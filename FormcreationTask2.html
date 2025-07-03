@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+</head>
+<body>
+
+    <h2>Contact form</h2>
+    <p>Please fill in your information and we'll be sending your order in no time.</p>
+
+    <form action="#" method="post">
+
+        <label for="fname">Your Name:</label><br>
+        <input type="text" id="fname" name="firstname" placeholder="First Name">
+        <input type="text" id="lname" name="lastname" placeholder="Last Name"><br><br>
+
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="e.g. help@contact.net"><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="text" name="phone1" size="3" placeholder="###">
+        <input type="text" name="phone2" size="3" placeholder="###">
+        <input type="text" name="phone3" size="4" placeholder="####"><br><br>
+
+        <label for="subject">Message Subject:</label><br>
+        <select id="subject" name="subject">
+            <option value="Other">Other</option>
+            <option value="Order">Order</option>
+            <option value="Support">Support</option>
+        </select><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+
+        <label for="verify">Verification:</label><br>
+        <input type="checkbox" id="verify" name="verify">
+        <label for="verify">I'm not a robot</label><br><br>
+
+        <input type="submit" value="SUBMIT FORM">
+
+    </form>
+
+</body>
+</html>
