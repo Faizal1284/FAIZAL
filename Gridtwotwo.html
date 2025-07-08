@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+      height: 100vh;
+      border: 10px solid red;
+      padding: 5px;
+      box-sizing: border-box;
+      background-color: yellow;
+    }
+
+    .left {
+      grid-row: span 2;
+      background-color: green;
+      color: black;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .right-top {
+      background-color: green;
+      color: black;
+      font-size: 36px;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .right-bottom {
+      background-color: green;
+      color: black;
+      padding: 10px;
+    }
+
+    .right-bottom p {
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">left</div>
+    <div class="right-top">right top</div>
+    <div class="right-bottom">
+      <strong>right bottom</strong>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem esse iste voluptate eum ex mollitia temporibus unde eveniet omnis, vel, corrupti sed nobis consequatur quaerat ad sequi aliquid nostrum?</p>
+    </div>
+  </div>
+</body>
+</html>
