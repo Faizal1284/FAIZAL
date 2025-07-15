@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Text</title>
+  <style>
+    .slide-fade-bounce {
+      font-size: 32px;
+      color: #2c3e50;
+      opacity: 0;
+      transform: translateX(-100px);
+      animation: slideFadeBounce 2.5s ease-out forwards;
+    }
+
+    @keyframes slideFadeBounce {
+      0% {
+        opacity: 2;
+        transform: translateX(-100px);
+      }
+      60% {
+        opacity: 1;
+        transform: translateX(10px); /* bounce overshoot */
+      }
+      80% {
+        transform: translateX(-5px); /* bounce back */
+      }
+      100% {
+        transform: translateX(0); /* settle */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slide-fade-bounce">Welcome to My Website!</div>
+
+</body>
+</html>
